@@ -1,4 +1,4 @@
-# Rina & Taufiq — Wedding Invitation Site
+# Rina & Prada — Wedding Invitation Site
 
 A mobile-first digital wedding invitation with RSVP, a live wishes wall, countdown, and Google Maps/Calendar/Sheets integration.
 
@@ -26,7 +26,7 @@ const CONFIG = {
   brideName: "Rina Kustiyawati",
   groomName: "Mohamad Taufiq Ardy Pradana",
   weddingDateISO: "2026-11-29T13:00:00+07:00",
-  venueAddress: "Ds Pelang Rt. 005 / Rw. 003, Mayong, Jepara, Jawa Tengah",
+  venueAddress: "The Bride's House",
   venueMapsQuery: "Ds Pelang Mayong Jepara",
   gift: { bank: "Bank ABC", account: "1234 5678 9012", holder: "a.n. Rina Kustiyawati" },
   GOOGLE_SCRIPT_URL: "", // set this in step 3
@@ -52,7 +52,7 @@ The provided folder wasn't attached to this conversation, so the site currently 
 
 ## 3. Connect Google Sheets (RSVP database)
 
-1. Create a new Google Sheet — name it whatever you like (e.g. "Wedding RSVP — Rina & Taufiq").
+1. Create a new Google Sheet — name it whatever you like (e.g. "Wedding RSVP — Rina & Prada").
 2. In the Sheet, go to **Extensions → Apps Script**.
 3. Delete the default `myFunction` code and paste in the full contents of `apps-script/Code.gs`.
 4. Click **Deploy → New deployment**.
@@ -76,19 +76,19 @@ That's it — every RSVP submission now appends a row to your sheet in real time
 
 I don't have access to your GitHub account, so this last step needs to happen on your end — it only takes a few minutes:
 
-1. Create a new repository on GitHub (e.g. `rina-taufiq-wedding`), public or private (Pages works with either on a paid plan; public repos get Pages free).
+1. Create a new repository on GitHub (e.g. `rina-prada-wedding`), public or private (Pages works with either on a paid plan; public repos get Pages free).
 2. Upload this whole `wedding-site` folder's contents to the repo root (drag-and-drop on github.com works, or via git):
    ```bash
    git init
    git add .
    git commit -m "Wedding invitation site"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/rina-taufiq-wedding.git
+   git remote add origin https://github.com/<your-username>/rina-prada-wedding.git
    git push -u origin main
    ```
 3. On GitHub, go to the repo's **Settings → Pages**.
 4. Under "Build and deployment", set **Source: Deploy from a branch**, **Branch: main**, folder **/ (root)**. Save.
-5. GitHub will publish it at `https://<your-username>.github.io/rina-taufiq-wedding/` within a minute or two.
+5. GitHub will publish it at `https://<your-username>.github.io/rina-prada-wedding/` within a minute or two.
 6. (Optional) Add a custom domain under the same Pages settings if you own one.
 
 ---
